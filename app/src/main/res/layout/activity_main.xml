@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="#22673AB7">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:text="Selamat Datang di Kasir Saya"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvPilih"
+        android:text="Silahkan pilih produk yang akan dibeli:"
+        android:textColor="#7B1FA2"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupPilih"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radioPulsa"
+        android:text="Pulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/radioToken"
+        android:text="Token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/radioEmoney"
+        android:text="Emoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:hint="Jumlah Barang"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvMember"
+        android:text="Silahkan klik jika Anda merupakan Membership"
+        android:textColor="#7B1FA2"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroupMember"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radioMember"
+        android:text="Membership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProses"
+        android:text="KALKULASI"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvBon"
+        android:layout_marginTop="20dp"
+        android:text="Nota Pembelian"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvNamaBarang"
+        android:layout_marginTop="8dp"
+        android:text="Nama Barang : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvJumlahBarang"
+        android:text="Jumlah Barang : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvHargaBarang"
+        android:text="Harga Barang : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDiskon"
+        android:text="Diskon : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:text="Biaya Admin : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTotalBayar"
+        android:text="Total Bayar : "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Terima Kasih! "
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
